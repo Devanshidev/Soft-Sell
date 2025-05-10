@@ -2,12 +2,21 @@
 
 import React from 'react';
 import FloatingBoxes from '../animations/FloatingBoxes';
-import Lottie from 'lottie-react';
 
-import lottieanimation from '../animations/lottieanimation.json';
+import dynamic from 'next/dynamic';
+
 import { BiSearchAlt } from 'react-icons/bi';
 import { RiRecycleFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
+
+// Dynamically import Lottie with SSR disabled
+const Lottie = dynamic(() => import('lottie-react'), {
+  ssr: false,
+  loading: () => <div className="w-full h-full bg-transparent"></div>
+});
+
+// Import animation data
+import lottieanimation from '../animations/lottieanimation.json';
 
 // Hero section showcasing SoftSell's value proposition
 const Hero: React.FC = () => {
