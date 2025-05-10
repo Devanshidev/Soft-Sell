@@ -3,7 +3,7 @@
 import React from 'react';
 import FloatingBoxes from '../animations/FloatingBoxes';
 import Lottie from 'lottie-react';
-import type { LottieRefCurrentProps } from 'lottie-react';
+
 import lottieanimation from '../animations/lottieanimation.json';
 import { BiSearchAlt } from 'react-icons/bi';
 import { RiRecycleFill } from 'react-icons/ri';

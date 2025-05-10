@@ -44,7 +44,7 @@ const FloatingBoxes = () => {
           let newX = box.x + box.speedX;
           let newY = box.y + box.speedY;
 
-          let updatedBox = { ...box };
+          const updatedBox = { ...box };
 
           // Bounce on horizontal edges
           if (newX < 0 || newX > 100) {
