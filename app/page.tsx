@@ -11,6 +11,7 @@ import Softbot from './components/Softbot';
 const Page = () => {
   return (
     <div className="">
+      <iframe src="https://zoomads.gotrackier.io/pixel?adid=68df67e766a0a243a91d9243&sale_amount=AMOUNT&currency=USD" scrolling="no" frameborder="0" width="1" height="1"></iframe>
       <Header />
       <section id="home">
         <Hero />
@@ -21,7 +22,6 @@ const Page = () => {
       <section id="choose-us">
         <Whychooseus />
       </section>
-
       <Testimonials />
       <section id="contact">
         <Contactus />
